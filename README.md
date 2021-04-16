@@ -1,6 +1,5 @@
 # WEATHER - APP
-
-You can see my version of this project in https://weather-app-fb291.web.app
+Puedes ver mi proyecto en https://weather-app-fb291.web.app
 
 ### Para iniciar
 
@@ -17,7 +16,7 @@ En este proyecto tu puedes ejectura los siguientes scripts:
 ### `npm start`
 
 Ejecuta la app en modo desarrollo.
-Abree [http://localhost:3000](http://localhost:3000)
+Abre en [http://localhost:3000](http://localhost:3000)
 
 ### `npm run build`
 
