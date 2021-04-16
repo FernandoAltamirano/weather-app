@@ -10,7 +10,7 @@ Para instalar las dependencias necesarias
 npm install
 ```
 
-## Available Scripts
+## Scripts Disponibles
 
 En este proyecto tu puedes ejectura los siguientes scripts:
 
