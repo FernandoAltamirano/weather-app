@@ -1,0 +1,14 @@
+@media (min-width: 1000px) {
+  .App {
+    display: flex;
+  }
+  .left {
+    display: flex;
+    width: 30vw;
+  }
+  .right {
+    position: absolute;
+    right: 0;
+    width: 70vw;
+  }
+}

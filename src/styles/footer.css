@@ -1,0 +1,12 @@
+.footer {
+  background-color: var(--black);
+  color: var(--second-color);
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 1px;
+}
+
+.footer > p > a {
+  color: var(--second-color);
+  font-weight: 600;
+}

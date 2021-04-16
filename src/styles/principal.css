@@ -1,0 +1,101 @@
+.principal {
+  background-color: var(--bg-principal);
+  color: var(--white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.principal__degrees,
+.principal__weather,
+.principal__location {
+  text-align: center;
+  color: var(--second-color);
+}
+.principal__button {
+  padding: 20px;
+}
+.principal__button > button {
+  background-color: var(--gray);
+  width: 50%;
+  border: none;
+  color: var(--white);
+  padding: 10px 15px;
+  font-size: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.principal__image {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 40vh;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.principal__imageBG {
+  position: absolute;
+  left: -120px;
+  top: 0;
+  width: 160%;
+  height: 120%;
+  opacity: 0.1;
+}
+
+.principal__imageWEATHER {
+  width: 140px;
+  margin-top: 50px;
+}
+.principal__degrees {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.principal__degrees > h1 {
+  font-size: 8em;
+  font-weight: 400;
+}
+.principal__degrees > span {
+  font-size: 4em;
+  margin-top: 1em;
+  color: var(--second-color);
+}
+.principal__weather > h2 {
+  padding: 0 20px;
+  font-size: 2em;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+.principal__location > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+.principal__location > p :nth-child(2) {
+  font-weight: 600;
+}
+
+@media (min-width: 1000px) {
+  .principal {
+    position: fixed;
+  }
+}
+@media (min-width: 1024px) {
+  .principal {
+    width: 30vw;
+  }
+  .principal__imageBG {
+    height: 90%;
+    width: 140%;
+  }
+}

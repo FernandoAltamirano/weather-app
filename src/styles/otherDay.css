@@ -1,0 +1,30 @@
+.otherDay {
+  background-color: var(--bg-principal);
+  /* margin: 15px; */
+  color: var(--white);
+  text-align: center;
+  padding: 15px 8px;
+}
+.otherDay img {
+  width: 50%;
+  margin: 15px 0 20px 0;
+}
+.otherDay__degrees span {
+  margin: 0 10px;
+}
+.otherDay__degrees span:nth-child(2) {
+  color: var(--second-color);
+}
+
+@media (min-width: 1024px) {
+  .otherDay {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .otherDay__degrees span {
+    margin: 0 5px;
+  }
+}

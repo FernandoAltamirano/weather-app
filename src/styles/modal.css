@@ -1,0 +1,85 @@
+.modal {
+  background-color: var(--bg-principal);
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  transition: 450ms all;
+}
+.left {
+  left: -5000px;
+}
+.modal__icon {
+  color: var(--white);
+}
+.modal__close {
+  text-align: right;
+  cursor: pointer;
+}
+.modal__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.modal__input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--white);
+  padding: 5px;
+}
+.modal__search > button {
+  background-color: #3c47e9;
+  color: var(--white);
+  border: none;
+  font-size: 16px;
+  padding: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.modal__input > input {
+  background-color: transparent;
+  height: 40px;
+  font-size: 1em;
+  color: var(--white);
+  padding-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.modal__input .modal__icon {
+  color: var(--gray);
+}
+
+.modal__results {
+  margin-top: 30px;
+  overflow-y: overlay;
+  height: 600px;
+}
+
+.modal__results::-webkit-scrollbar {
+  display: none;
+}
+.modal__results .result {
+  display: flex;
+  color: var(--white);
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.modal__results .result:hover {
+  border: 1px solid var(--second-color);
+}
+.modal__results .result .modal__icon {
+  color: var(--gray);
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    min-width: 26.5vw;
+  }
+}

@@ -1,0 +1,139 @@
+.todayHightlights {
+  background: var(--black);
+  color: var(--white);
+  padding: 30px;
+}
+
+.todayHightlights > h1 {
+  font-size: 1.4em;
+  letter-spacing: 1px;
+}
+
+.todayHightlights__container {
+  padding-top: 15px;
+}
+.card {
+  background-color: var(--bg-principal);
+  margin: 20px auto 0 auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+/* windStatus */
+
+.windStatus__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.windStatus__value > h1 {
+  font-size: 4em;
+}
+.windStatus__value span {
+  font-size: 2em;
+  margin-top: 0.8em;
+}
+.windStatus__details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: var(--gray);
+  margin-right: 10px;
+}
+
+/* Humidity */
+
+.humidity__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.humidity__value > h1 {
+  font-size: 4em;
+}
+.humidity__value span {
+  font-size: 2em;
+  margin-top: 0.8em;
+}
+
+.humidity__barContainer {
+  width: 80%;
+  margin: auto;
+}
+
+.humidity__numbers {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+  color: var(--second-color);
+  margin-bottom: 2px;
+  justify-content: space-between;
+}
+.percentage {
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.humidity__bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+.humidity__bar .yellow {
+  position: absolute;
+  left: 0;
+  background-color: #ffec65;
+  height: 10px;
+  border-radius: 5px;
+}
+
+/* Visibility and Air Pressure */
+
+.visibility__value,
+.airpressure__value {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.visibility__value > h1,
+.airpressure__value > h1 {
+  font-size: 4em;
+  margin-right: 8px;
+}
+.visibility__value span,
+.airpressure__value > span {
+  font-size: 2em;
+  margin-top: 0.8em;
+}
+
+@media (min-width: 1024px) {
+  .todayHightlights {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .todayHightlights > h1 {
+    margin-bottom: 20px;
+  }
+  .todayHightlights__container {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  .card {
+    width: 100%;
+    margin-top: 0;
+  }
+}

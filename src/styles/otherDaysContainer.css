@@ -1,0 +1,16 @@
+.otherDaysContainer {
+  background-color: var(--black);
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 30px;
+}
+
+@media (min-width: 1024px) {
+  .otherDaysContainer {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 50px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

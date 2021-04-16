@@ -1,0 +1,24 @@
+.grades {
+  background: var(--black);
+  padding: 30px 150px 0 0;
+  text-align: right;
+}
+
+.grades__button {
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  background: #585676;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--white);
+}
+
+.active {
+  background-color: var(--white);
+  color: var(--black);
+}
