@@ -1,5 +1,3 @@
-# WEATHER - APP
-Puedes ver mi proyecto en https://weather-app-fb291.web.app
 
 ### Para iniciar
 
